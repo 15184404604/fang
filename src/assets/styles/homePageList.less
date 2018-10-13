@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import "./variables.less";
+
+
+.am-list-view-scrollview{
+    overflow: visible !important;
+}
+.am-list-view-scrollview-content{
+    margin-bottom: 60px;
+    
+}
+.am-list-header{
+    background-color: #fff;
+    border-left: 3px solid green;
+    .header{
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+.homePageList{
+    display: flex;
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 110px;
+    box-sizing: border-box;
+    .homePageList-left-box{
+        img{
+            width: 90px;
+            height: 88px;
+            padding-right: 6px;
+        }
+    }
+    .homePageList-right-box{
+        position: relative;
+        p{margin: 0}
+        .title{
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            padding-bottom: 4px
+        }
+        .area{
+            color: #666;
+            font-size: 12px;
+            padding-bottom: 4px
+        }
+        .areasize{
+            color: #666;
+            font-size: 12px;
+            padding-bottom: 4px
+        }
+        .green{
+            display: inline-block;
+            text-align: center;
+            width: 35px;
+            height: 19px;
+            line-height: 19px;
+            font-size: 12px;
+            background-color: #EDFBEE;
+            color: #6DCD7C;
+            border-radius: 7px;
+
+        }
+        .orange{
+            display: inline-block;
+            text-align: center;
+            width: 50px;
+            height: 19px;
+            line-height: 19px;
+            font-size: 12px;
+            background-color: #FFF3E6;
+            color: #FFAC34;
+            border-radius: 7px;
+        }
+
+        .skyblue{
+            display: inline-block;
+            text-align: center;
+            width: 35px;
+            height: 19px;
+            line-height: 19px;
+            font-size: 12px;
+            background-color: #ECF5FF;
+            color: #7FBFEB;
+            border-radius: 7px;
+        }
+
+        .gray{
+            color: #666;
+            font-size: 12px;
+        }
+
+        .price{
+            font-size: 14px;
+            color: #FF0000;
+            position: absolute;
+            right: -28px;
+            top: 6px;
+        }
+    }
+}

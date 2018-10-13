@@ -1,0 +1,6 @@
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import { Button } from 'antd-mobile';
+ReactDOM.render(<Button>Start</Button>, document.querySelector("#root"));
+
+
