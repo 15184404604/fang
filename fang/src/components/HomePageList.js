@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { ListView,Flex } from 'antd-mobile';
+import { ListView} from 'antd-mobile';
 
 import imgUrl from '../assets/images/listimg3.jpg'
 
@@ -91,7 +91,7 @@ export default class HomePageList extends Component {
         return (
             <div className="homePageList">
                 <div className="homePageList-left-box">
-                    <img src={rowData.img}/>
+                    <img alt="" src={rowData.img}/>
                 </div>
                 <div className="homePageList-right-box">
                     <p className="title">{rowData.title}</p>

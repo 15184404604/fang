@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-
+import Nav from '../components/HomePageNav'
 import { Carousel } from 'antd-mobile'
 import '../assets/styles/homePage.less'
 import HomePageFeature from '../components/HomePageFeature'
@@ -94,28 +94,11 @@ export default class HomePage extends Component {
             
         ]
         
-        let btmData=[
-            {
-                iconClass:'iconfont icon-home',
-                title:'首页'
-            },
-            {
-                iconClass:'iconfont icon-chat',
-                title:'微聊'
-            },
-            {
-                iconClass:'iconfont icon-xing',
-                title:'推荐'
-            },
-            {
-                iconClass:'iconfont icon-wode',
-                title:'我的'
-            }
-        ]
         return (
             <div className="home-page">
-                
-
+            
+            {/*导航栏*/}
+            <Nav/>
             {/*轮播*/}
             
             <Carousel

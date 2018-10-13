@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../assets/styles/login.less'
 
 import Logo from '../assets/images/logo1.png'
-
+import axios from 'axios'
 import LoginFormInput from '../components/LoginFormInput'
 import LoginFormButton from '../components/LoginFormButton'
 export default class Login extends Component {
@@ -23,8 +23,23 @@ export default class Login extends Component {
   }
 
   doLogin(){
-    console.log("用户名：",this.state.username,"密码：",this.state.password);
-    
+    // console.log("用户名：",this.state.username,"密码：",this.state.password);
+    const {username,password}=this.state;
+    let _this=this;
+    axios
+    .get(`/sever/success.json?username=${username}&password=${password}`)
+    .then((res)=>{
+      
+      if(res.data.success){
+        alert(res.data.message);
+        _this.props.router.push('/main');
+      }
+    })
+    .catch((err)=>{
+      console.log(err);
+      
+    })
+
   }
   render() {
     return (

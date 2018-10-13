@@ -17,7 +17,7 @@ export default class HomePageFeature extends Component {
                     {this.props.data.map((item,i)=>{
                         return (
                             <div className="flex-container-main" key={i}>
-                                <img src={item.img} className="flex-container-main-img"/>
+                                <img alt="" src={item.img} className="flex-container-main-img"/>
                                 <p>{item.title}</p>
                             </div>
                         )

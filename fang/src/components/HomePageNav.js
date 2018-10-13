@@ -19,7 +19,7 @@ export default class HomePageNav extends Component {
             </div>
             }
         >
-        <a href="##" className="nav-grabble">
+        <a href="javascript:;" className="nav-grabble">
             <Icon key="0" type="search" size="md"  className="nav-grabble-icon"/>
             <input type="text" placeholder="挑好房,上源码搜房APP" className="nav-grabble-input"/>
         </a>
